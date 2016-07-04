@@ -1,5 +1,5 @@
 {
-  "name": "markdown-it-flowdock",
+  "name": "markdown-it-hashmention",
   "version": "0.3.7",
   "description": "Flowdock hashtag and mention parser for markdown-it",
   "author": "Ville Lautanala <lautis@gmail.com>",
