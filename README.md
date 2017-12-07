@@ -1,4 +1,8 @@
-# markdown-it-hashmention
+# sc-markdown-it-hashmention
+
+## Forked
+
+Some changes.
 
 [![Build Status](https://travis-ci.org/flowdock/markdown-it-flowdock.svg)](https://travis-ci.org/flowdock/markdown-it-flowdock)
 
