@@ -8,7 +8,7 @@ function flowdockHashtag(tokens, idx) {
   var result = '<a ';
   if (flowdockHashtag.options && flowdockHashtag.options.pid && (flowdockHashtag.options.href_channel || flowdockHashtag.options.href_task)) {
     if (intRegex.test(tag) && tag !== '0') {
-      result += 'class="task" data-norender="1" data-tasknum="' + tag + '" data-taskpid="' + flowdockHashtag.options.pid + '" onclick="showTaskByNum(event, ' + tag + ',\'' + flowdockHashtag.options.pid + '\')" href="' + flowdockHashtag.options.href_task + flowdockHashtag.options.pid + '/' + tag + '"';
+      result += 'class="task" data-tasknum="' + tag + '" data-taskpid="' + flowdockHashtag.options.pid + '"';
     }
     else {
       result += 'class="tag" href="' + flowdockHashtag.options.href_channel + tag + '"';
