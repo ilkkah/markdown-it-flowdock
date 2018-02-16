@@ -5,7 +5,7 @@ function flowdockMention(tokens, idx) {
   var markup = tokens[idx].markup;
   var result = '<a class="mention"';
   if (flowdockMention.options && flowdockMention.options.href) {
-	result += ' href="' + flowdockMention.options.href + tag + '"';
+	result += ' href="' + flowdockMention.options.href + encodeURIComponent(tag) + '"';
   }
   result += '>' + markup + tag + '</a>';
 
