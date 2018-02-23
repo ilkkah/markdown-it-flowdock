@@ -11,7 +11,7 @@ function flowdockHashtag(tokens, idx) {
       result += 'class="task" data-tasknum="' + tag + '" data-taskpid="' + flowdockHashtag.options.pid + '"';
     }
     else {
-      result += 'class="tag" href="' + flowdockHashtag.options.href_channel + tag + '"';
+      result += 'class="tag" href="' + flowdockHashtag.options.href_channel + encodeURIComponent('#'+tag) + '"';
     }
   }
   result += '>' + markup + tag + '</a>';
