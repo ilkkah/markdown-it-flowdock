@@ -1,7 +1,7 @@
 import parser from './parser';
 
 var intRegex = /^\d+$/;
-var taskAndProjectRegex = /^([a-z][a-z0-9-]+)_(\d+)$/;
+var taskAndProjectRegex = /^([a-z][a-z0-9-]*)_(\d+)$/;
 
 function flowdockHashtag(tokens, idx) {
   var tag = tokens[idx].content;
