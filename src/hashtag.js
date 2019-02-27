@@ -11,6 +11,9 @@ function flowdockHashtag(tokens, idx) {
     if (intRegex.test(tag) && tag !== '0' && flowdockHashtag.options.pid) {
       result += 'class="task" data-tasknum="' + tag + '" data-taskpid="' + flowdockHashtag.options.pid + '"';
     }
+    else if (intRegex.test(tag) && tag !== '0') {
+      result += 'class="ticket" data-ticketnum="' + tag + '"';
+    }
     else if (taskAndProjectRegex.test(tag)) {
       result += 'class="task" data-task="' + tag + '"';
     } else {
