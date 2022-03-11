@@ -1,6 +1,6 @@
 {
   "name": "sc-markdown-it-hashmention",
-  "version": "0.3.19",
+  "version": "0.3.20",
   "description": "Flowdock hashtag and mention parser for markdown-it",
   "author": "Ville Lautanala <lautis@gmail.com>",
   "keywords": [
