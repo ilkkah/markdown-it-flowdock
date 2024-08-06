@@ -25,7 +25,7 @@ function flowdockHashtag(tokens, idx) {
   return result;
 }
 
-export default function(md, options) {
+export default function (md, options) {
   const split = "#|＃";
   const hashtag = parser(md, 'hashtag', new RegExp(split));
   md.core.ruler.push('hashtag', hashtag);
