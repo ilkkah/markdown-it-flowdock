@@ -7,14 +7,14 @@ function flowdockMention(tokens, idx) {
   const isGroupMention = flowdockMention.options.groups && flowdockMention.options.groups.includes(tag);
 
   if (isUserMention) {
-    var result = '<a class="mention mention-user"';
+    var result = '<a data-user="' + tag + '" class="mention mention-user"';
     if (flowdockMention.options && flowdockMention.options.href) {
       result += ' href="' + flowdockMention.options.href + encodeURIComponent(tag) + '"';
     }
     result += '>' + markup + tag + '</a>';
     return result;
   } else if (isGroupMention) {
-    var result = '<span class="mention mention-group"';
+    var result = '<span data-group="' + tag + '" class="mention mention-group"';
     result += '>' + markup + tag + '</span>';
     return result;
   } else {
